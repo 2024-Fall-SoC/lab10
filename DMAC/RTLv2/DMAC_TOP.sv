@@ -109,14 +109,14 @@ module DMAC_TOP
         .rst_n                  (rst_n),
 
         // AMBA APB interface
-        .psel_i                 (psel_i),
-        .penable_i              (penable_i),
-        .paddr_i                (paddr_i),
-        .pwrite_i               (pwrite_i),
-        .pwdata_i               (pwdata_i),
-        .pready_o               (pready_o),
-        .prdata_o               (prdata_o),
-        .pslverr_o              (pslverr_o),
+        .s_apb_psel             (psel_i),
+        .s_apb_penable          (penable_i),
+        .s_apb_pwrite           (pwrite_i),
+        .s_apb_paddr            (paddr_i),
+        .s_apb_pwdata           (pwdata_i),
+        .s_apb_pready           (pready_o),
+        .s_apb_prdata           (prdata_o),
+        .s_apb_pslverr          (pslverr_o),
 
         .hwif_in                (cfg_hwif_in),
         .hwif_out               (cfg_hwif_out)

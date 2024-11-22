@@ -17,7 +17,7 @@ addrmap DMAC_CFG {
 			   	This document describes behaviors of major verion 2.";
             sw = r;
             hw = na;
-            reset = 32'h0001_2024;
+            reset = 32'h0001_0101;
         } version[31:0];	// 32b field
     } DMA_VER @0x0;		// offset = 0
     reg {
