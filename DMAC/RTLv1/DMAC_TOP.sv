@@ -62,6 +62,7 @@ module DMAC_TOP
     wire    DMAC_CFG_pkg::DMAC_CFG__in_t    cfg_hwif_in;
     wire    DMAC_CFG_pkg::DMAC_CFG__out_t   cfg_hwif_out;
 
+    // if you are in 115.145.208.242, use this one
     DMAC_CFG u_cfg(
         .clk                    (clk),
         .rst_n                  (rst_n),
@@ -80,6 +81,27 @@ module DMAC_TOP
         .hwif_out               (cfg_hwif_out)
     );
 
+    // if you are in 115.145.208.243, use this one
+/*
+    DMAC_CFG u_cfg(
+	.clk			(clk),
+	.rst_n			(rst_n),
+
+	//AMBA APB interface
+	.psel_i			(psel_i),
+	.psel_i                 (psel_i),
+        .penable_i              (penable_i),
+        .paddr_i                (paddr_i),
+        .pwrite_i               (pwrite_i),
+        .pwdata_i               (pwdata_i),
+        .pready_o               (pready_o),
+        .prdata_o               (prdata_o),
+        .pslverr_o              (pslverr_o),
+
+	.hwif_in                (cfg_hwif_in),
+        .hwif_out               (cfg_hwif_out)    
+    );
+*/
     DMAC_ENGINE u_engine(
         .clk                    (clk),
         .rst_n                  (rst_n),
