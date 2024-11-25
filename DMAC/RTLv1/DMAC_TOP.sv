@@ -62,7 +62,7 @@ module DMAC_TOP
     wire    DMAC_CFG_pkg::DMAC_CFG__in_t    cfg_hwif_in;
     wire    DMAC_CFG_pkg::DMAC_CFG__out_t   cfg_hwif_out;
 
-    // if you are in 115.145.208.242, use this one
+    // if you are in 115.145.208.242 & 244, use this one
     DMAC_CFG u_cfg(
         .clk                    (clk),
         .rst_n                  (rst_n),
