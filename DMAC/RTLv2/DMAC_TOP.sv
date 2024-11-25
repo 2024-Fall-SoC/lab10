@@ -104,7 +104,7 @@ module DMAC_TOP
     assign  ch_sfr_out[2]       = cfg_hwif_out.CH2;
     assign  ch_sfr_out[3]       = cfg_hwif_out.CH3;
 
-    // if you are in 115.145.208.242, use this one
+    // if you are in 115.145.208.242 & 244, use this one
     DMAC_CFG u_cfg(
         .clk                    (clk),
         .rst_n                  (rst_n),
